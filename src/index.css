@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+  background-color: darkslategray;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+header {
+  height: 100px;
+}
+img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-left: 20px;
+}
+.meme {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  display: inline-block;
+}
+.meme > img {
+  width: 50%;
+  height: 50%;
+  /* margin-top: 10px;
+  margin-left: 0; */
+}
+
+.meme .top {
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 999;
+  margin-left: 120px;
+  left: 0;
+  right: 0;
+  top: 0; /* Adjust this value to move the positioned div up and down */
+  text-align: left;
+  width: 95%;
+  font-size: 20px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.meme .bottom {
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 999;
+
+  margin-left: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Adjust this value to move the positioned div up and down */
+  text-align: left;
+  width: 95%;
+  font-size: 20px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.meme-form {
+  width: 60%;
+  margin: 26px, auto;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.meme-form > input {
+  width: 45%;
+  height: 50px;
+}
+.meme-form > button {
+  border: none;
+
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  color: white;
+  background: black;
+}
+.meme-form > input ::-webkit-input-placeholder {
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: center;
+}
